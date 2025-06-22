@@ -135,16 +135,7 @@
 
 .about-me {
   padding: 10.8rem 10.8rem;
-  background-color: #f5f5f5;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
-  align-items: center;
+  background-color: #fff;
 }
 
 .bio-contents {
@@ -197,3 +188,36 @@
     margin: 10px;
   }
 } */
+
+.services-section {
+  padding: 10.8rem 10.8rem;
+  background-color: #f5f5f5;
+}
+.service-he {
+  text-align: center;
+}
+.service {
+  padding: 4.8rem 2.4rem;
+  box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0, 0.075);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.service:hover h3 {
+  /* transform: translateY(-1rem); */
+  color: #007e6a;
+  box-shadow: 0 3.2rem 6.4rem rgb(0, 0, 0, 0.06);
+}
+
+.service-icon {
+  color: #007e6a;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 2.4rem;
+}
+
+.all-srvices {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+}

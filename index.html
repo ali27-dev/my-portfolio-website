@@ -7,6 +7,16 @@
     <!-- css-links -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css" />
+
+    <!-- icons-links -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <!-- header-section -->
@@ -23,7 +33,7 @@
         <ul class="main-nav-li">
           <li><a class="nav-li-link" href="#home">home</a></li>
           <li><a class="nav-li-link" href="#about">about</a></li>
-          <li><a class="nav-li-link" href="#works">skills</a></li>
+          <li><a class="nav-li-link" href="#services">services</a></li>
           <li><a class="nav-li-link" href="#pricing">projects</a></li>
           <li><a class="nav-li-link" href="#contect">contect</a></li>
         </ul>
@@ -132,18 +142,47 @@
       </section>
       <!-- about-me-end -->
 
-      <!-- <section class="skill">
+      <!-- services-section-start -->
+      <section class="services-section" id="services">
         <div class="container">
-          <h2 class="heading-secondary">Skills</h2>
-          <p class="text-description">
-            I have honed my skills in various frontend technologies, including
-            HTML, CSS, and JavaScript. I am proficient in creating responsive
-            designs and implementing interactive features to enhance user
-            experience. My expertise extends to frameworks like React and
-            Vue.js, allowing me to build modern web applications efficiently.
-          </p>
+          <h2 class="subheading service-he">What I Do for You</h2>
         </div>
-      </section> -->
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <!-- card-1 -->
+          <div class="service">
+            <ion-icon class="service-icon" name="desktop-outline"></ion-icon>
+            <h3 class="heading-tertiary">Web Development</h3>
+            <p class="text-description">
+              I create responsive and user-friendly websites using the latest
+              web technologies.
+            </p>
+          </div>
+          <!-- card-2 -->
+          <div class="service">
+            <ion-icon class="service-icon" name="image-outline"></ion-icon>
+            <h3 class="heading-tertiary">UI/UX Design</h3>
+            <p class="text-description">
+              I design intuitive user interfaces that enhance user experience
+              and engagement.
+            </p>
+          </div>
+          <!-- card-3 -->
+          <div class="service">
+            <ion-icon class="service-icon" name="code-slash-outline"></ion-icon>
+            <h3 class="heading-tertiary">JavaScript Development</h3>
+            <p class="text-description">
+              I specialize in JavaScript development, creating dynamic and
+              interactive web applications.
+            </p>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="container all-srvices">
+          <a href="#" class="link">More Services &rarr;</a>
+        </div>
+      </section>
+      <!-- services-section-end -->
     </main>
     <footer></footer>
   </body>
