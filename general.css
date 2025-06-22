@@ -40,6 +40,29 @@ Paragraph default: 1.6
 #6f6f6f (lightest grey allowed on #fdf2e9)
 #555
 #333
+*****************
+****COLORS****
+root
+Specificity: (0,1,0)
+ {
+    --primary-color: #007e6a;
+    --secondary-color: #00c16e;
+    --font-color: #707070;
+    --bg-color: #fff;
+    --heading-color: #404044;
+    --border-radius: 6px;
+    --border-radius-full: 35px;
+    --border-color-light: #eee;
+    --iframe-filter: grayscale(0%);
+    --bg-grey: #f6f6f6;
+    --bg-light: #fbfbfb;
+    --bg-dark-color: #fff;
+    --disable-color: #d8d6d6;
+    --box-shadow-color: rgb(0 0 0 / 10%);
+    --border-color: #eee;
+    --bg-layer: rgba(6, 31, 36, 0.9);
+}
+
 
 --- 05 SHADOWS
 
@@ -66,7 +89,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%; /* 1rem = 10px */
   font-weight: 400; /* Default weight */
-  color: #333;
+  color: #707070;
 }
 
 /**************************/
@@ -76,7 +99,6 @@ body {
 .heading-secondary,
 .heading-tertiary {
   font-weight: 700;
-  color: #333;
   /* color: #45260a; */
   /* color: #343a40; */
   letter-spacing: -0.5px;
@@ -87,7 +109,128 @@ body {
   margin-bottom: 3.2rem;
 }
 .heading-secondary {
+  color: #404044;
   font-size: 2.4rem; /* 24px */
   font-weight: 600; /* Semi-bold */
-  color: #555; /* Slightly lighter grey */
+  margin-bottom: 1.6rem;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #707070;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #046353;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #6c757d75;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted ##6c757d75; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem #6c757d75;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #007e6a;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #046353;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #03c16e;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #1bd484;
+
+  /* border: 3px solid #fff; */
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--center-v {
+  align-items: center;
+}
+/************************/
+/********* HELPER ********* */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+strong {
+  color: #404044;
+  font-weight: 600;
 }

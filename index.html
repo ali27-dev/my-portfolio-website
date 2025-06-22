@@ -6,59 +6,144 @@
     <title>Abid's | protfolio</title>
     <!-- css-links -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="general.css" />
   </head>
   <body>
     <!-- header-section -->
     <header class="header">
-      <!-- nav-section -->
-      <nav class="nav-bar">
-        <!-- LOGO -->
-        <div class="logo">
-          <a href="#home"
-            ><img
-              src="assets/images/logo-text.png"
-              alt="Abid's logo"
-              class="logo-img"
-          /></a>
-        </div>
-        <!-- LINKS -->
-        <div class="nav-links">
-          <a class="nav-li-links" href="#home">Home</a>
-          <a class="nav-li-links" href="#about">About</a>
-          <a class="nav-li-links" href="#projects">Projects</a>
-          <a class="nav-li-links" href="#contact">Contact</a>
-          <a class="nav-li-links" href="#blog">Blog</a>
-        <div/>
+      <a href="#">
+        <img
+          src="assets/images/logo-text.png"
+          alt="Abid Ali's Logo"
+          class="logo"
+        />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-li">
+          <li><a class="nav-li-link" href="#home">home</a></li>
+          <li><a class="nav-li-link" href="#about">about</a></li>
+          <li><a class="nav-li-link" href="#works">skills</a></li>
+          <li><a class="nav-li-link" href="#pricing">projects</a></li>
+          <li><a class="nav-li-link" href="#contect">contect</a></li>
+        </ul>
       </nav>
+
+      <!-- mobile-menu-button 
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>-->
     </header>
-    <!-- herader-section-end -->
+    <!-- header-section-start -->
+
     <main>
       <!-- hero-section -->
       <section class="hero-section">
         <!-- hero -->
         <div class="hero">
-        <div class="hero-text-box">
-          <h1 class="heading-primary">Hi, I'm Abid Ali
-             Welcome to My Portfolio</h1>
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Hi, I'm Abid Ali Welcome to My Portfolio
+            </h1>
+            <p class="text-description">
+              Frontend Developer & JavaScript Enthusiast. Explore my work and
+              projects as a Frontend Developer.
+            </p>
+
+            <!--button -->
+            <a href="#cta" class="btn btn--full margin-right-sm">read more</a>
+          </div>
+
+          <!-- hero-img-box-section -->
+          <div class="hero-image">
+            <a href="#">
+              <img
+                src="assets/images/image2.JPG"
+                class="hero-img"
+                alt="Abid Ali's profile picture"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- hero-end -->
+      </section>
+      <!-- hero-section-end -->
+
+      <!-- about-me-start -->
+      <section class="about-me" id="about">
+        <div class="container grid grid-2-cols grid--center-v">
+          <div class="about-part-1">
+            <h2 class="heading-secondary">About Me</h2>
+            <p class="text-description">
+              I am a passionate Frontend Developer with a keen interest in
+              creating dynamic and responsive web applications. My journey in
+              web development has been fueled by a love for coding and a desire
+              to build user-friendly interfaces. With a strong foundation in
+              HTML, CSS, and JavaScript, I enjoy crafting visually appealing and
+              functional websites. My goal is to continuously learn and improve
+              my skills while delivering high-quality projects that meet the
+              needs of users.
+            </p>
+          </div>
+          <!-- part-2 -->
+          <div class="about-part-2">
+            <div class="bio-contents">
+              <div class="bio-details">
+                <p class="text-bio-description">
+                  <strong>Name:</strong> Abid Ali
+                </p>
+                <p class="text-bio-description">
+                  <strong>Email:</strong> abid@example.com
+                </p>
+                <p class="text-bio-description">
+                  <strong>From:</strong> Pakistan
+                </p>
+                <p class="text-bio-description">
+                  <strong>Phone:</strong> +92 300 0000000
+                </p>
+              </div>
+
+              <div class="bio-socials">
+                <ul class="main-nav-li">
+                  <li><a class="nav-li-link link" href="#">LinkedIn</a></li>
+                  <li><a class="nav-li-link link" href="#">GitHub</a></li>
+                  <li><a class="nav-li-link link" href="#">Twitter</a></li>
+                </ul>
+              </div>
+
+              <div class="bio-buttons">
+                <a href="#" class="btn-about btn--full margin-right-sm"
+                  >Hire Me</a
+                >
+                <a href="#" class="btn-about btn--outline"
+                  >Download CV &darr;</a
+                >
+              </div>
+
+              <!-- <div class="bio-buttons">
+        <a href="#" class="btn hire">Hire Me</a>
+        <a href="#" class="btn download">Download CV</a>
+      </div> -->
+              <!--two-buttons -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about-me-end -->
+
+      <!-- <section class="skill">
+        <div class="container">
+          <h2 class="heading-secondary">Skills</h2>
           <p class="text-description">
-          Frontend Developer & JavaScript Enthusiast. Explore my work and projects as a Frontend Developer.
+            I have honed my skills in various frontend technologies, including
+            HTML, CSS, and JavaScript. I am proficient in creating responsive
+            designs and implementing interactive features to enhance user
+            experience. My expertise extends to frameworks like React and
+            Vue.js, allowing me to build modern web applications efficiently.
           </p>
         </div>
-     <!-- hero-img-box-section -->
-          <div class="hero-img-box">
-            <a href="#">
-            <img
-              src="assets/images/image1.png"
-              class="hero-img"
-              alt="Abid Ali's profile picture"
-            />
-          </a>
-          </div>
-      </div>
-      <!-- hero-end -->
-    </section>
-      <!-- her-section-0end -->
+      </section> -->
     </main>
     <footer></footer>
   </body>
