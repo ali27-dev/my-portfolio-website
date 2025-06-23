@@ -102,8 +102,7 @@ body {
 }
 
 .heading-primary,
-.heading-secondary,
-.heading-tertiary {
+.heading-secondary {
   font-weight: 700;
   /* color: #45260a; */
   /* color: #343a40; */
@@ -122,10 +121,14 @@ body {
 }
 
 .heading-tertiary {
-  color: #404044;
-  font-size: 2rem;
-  line-height: 1;
-  margin-bottom: 2rem;
+  color: #707070;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  /* color: #45260a; */
+  /* color: #343a40; */
+  letter-spacing: -0.5px;
 }
 
 .subheading {

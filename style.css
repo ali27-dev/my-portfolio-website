@@ -67,11 +67,11 @@
 /******* HERO-SECTION *****/
 
 .hero-section {
+  padding: 10.8rem 0 10.8rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(6, 31, 36, 0.9);
-  padding: 10.8rem 0 10.8rem 0;
   color: #fff;
   position: relative;
 }
@@ -134,7 +134,7 @@
 /**** ABOUT-ME-SECTION ****/
 
 .about-me {
-  padding: 10.8rem 10.8rem;
+  padding: 9.6rem;
   background-color: #fff;
 }
 
@@ -190,7 +190,7 @@
 } */
 
 .services-section {
-  padding: 10.8rem 10.8rem;
+  padding: 9.6rem;
   background-color: #f5f5f5;
 }
 .service-he {
@@ -221,3 +221,47 @@
   font-size: 1.8rem;
   font-weight: 800;
 }
+
+/***************************/
+/**** SKILL-BOX-SECTION ****/
+
+.skills-section {
+  padding: 9.6rem;
+  background-color: #fff;
+}
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 2rem; */
+  gap: 5rem;
+}
+
+.image-box {
+  flex: 1;
+  min-width: 30rem;
+}
+.image-box img {
+  width: 50rem;
+  height: 55rem;
+  border-radius: 12px;
+  box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0, 0.075);
+}
+.skills-box {
+  flex: 1;
+  min-width: 30rem;
+  padding: 3rem 0 6rem;
+}
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 0.7rem;
+  margin-bottom: 2.4rem;
+}
+.progress-bar {
+  height: 1rem;
+  background-color: #007e6a;
+}
+
+/***************************/
+/**** PROJECT-SECTION ******/
