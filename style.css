@@ -422,3 +422,93 @@
   background-color: #fff;
   color: #015143;
 }
+
+/**************************/
+/* CONTACT-SECTION */
+/**************************/
+
+.contact-section {
+  background-color: #071f24;
+  padding: 9.6rem 4.8rem;
+}
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.contact-logo {
+  display: block;
+  margin-bottom: 1.8rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.8rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.contact-heading {
+  font-size: 1.8rem;
+  color: #f5f5f5;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.contacts {
+  color: #aaaaaa;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contact-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.contact-link:link,
+.contact-link:visited {
+  font-size: 1.6rem;
+  color: #aaaaaa;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.contact-link:hover,
+.contact-link:active {
+  color: #015143;
+}
+
+/**************************/
+/* FOOTER-SECTION */
+/**************************/
+
+.footer {
+  background-color: #01181d;
+  padding: 2.4rem 4.8rem;
+  color: #aaaaaa;
+  text-align: center;
+}
+.footer-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.footer-text a {
+  color: #007e6a;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footer-text a:hover,
+.footer-text a:active {
+  color: #aaaaaa;
+  text-decoration: underline;
+}
