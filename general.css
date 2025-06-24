@@ -98,7 +98,7 @@ body {
 .container {
   /* 1140px */
   max-width: 120rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .heading-primary,
@@ -132,10 +132,11 @@ body {
 }
 
 .subheading {
-  font-size: 3.4rem;
-  font-weight: 600;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
   color: #404044;
-  margin-bottom: 6.4rem;
+  margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
 
@@ -232,8 +233,8 @@ body {
 
 .grid {
   display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
+  column-gap: 4.2rem;
+  row-gap: 3.2rem;
 
   /* margin-bottom: 9.6rem; */
 }
@@ -248,6 +249,9 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+.grid--3-rwos {
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .grid--4-cols {

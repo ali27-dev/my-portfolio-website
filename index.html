@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fav-icon -->
+    <link
+      rel="icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
     <title>Abid's | protfolio</title>
     <!-- css-links -->
     <link rel="stylesheet" href="style.css" />
@@ -51,6 +58,14 @@
     <main>
       <!-- hero-section -->
       <section class="hero-section">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="images/video.mp4" type="video/mp4" />
+            <source src="images/video.webm" type="video/webm" />
+            Your browser is not supported!
+          </video>
+        </div>
+
         <!-- hero -->
         <div class="hero">
           <div class="hero-text-box">
@@ -146,14 +161,14 @@
       <!-- services-section-start -->
       <section class="services-section" id="services">
         <div class="container">
-          <h2 class="subheading service-he">What I Do for You</h2>
+          <h2 class="heading-secondary service-he">What I Do for You</h2>
         </div>
 
         <div class="container grid grid--3-cols margin-bottom-md">
           <!-- card-1 -->
           <div class="service">
             <ion-icon class="service-icon" name="desktop-outline"></ion-icon>
-            <h3 class="heading-tertiary">Web Development</h3>
+            <h3 class="subheading">Web Development</h3>
             <p class="text-description">
               I create responsive and user-friendly websites using the latest
               web technologies.
@@ -162,7 +177,7 @@
           <!-- card-2 -->
           <div class="service">
             <ion-icon class="service-icon" name="image-outline"></ion-icon>
-            <h3 class="heading-tertiary">UI/UX Design</h3>
+            <h3 class="subheading">UI/UX Design</h3>
             <p class="text-description">
               I design intuitive user interfaces that enhance user experience
               and engagement.
@@ -171,7 +186,7 @@
           <!-- card-3 -->
           <div class="service">
             <ion-icon class="service-icon" name="code-slash-outline"></ion-icon>
-            <h3 class="heading-tertiary">JavaScript Development</h3>
+            <h3 class="subheading">JavaScript Development</h3>
             <p class="text-description">
               I specialize in JavaScript development, creating dynamic and
               interactive web applications.
@@ -260,87 +275,117 @@
       <!-- projects-section-start -->
       <section class="projects-section" id="projects">
         <div class="container">
-          <h2 class="subheading">My Projects</h2>
+          <h2 class="heading-secondary service-he">My Success Work</h2>
         </div>
-        <div class="container grid grid--3-cols">
+        <div class="container grid grid--3-cols grid--center-v">
           <!-- project-1 -->
-          <div class="project">
-            <img
-              src="assets/images/project1.jpg"
-              alt="Project 1"
-              class="project-img"
-            />
-            <h3 class="heading-tertiary">Project Title 1</h3>
-            <p class="text-description">
+          <figure class="project">
+            <a
+              class="nav-li-link"
+              href="https://ali27-dev-forkify-project.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/images/project-1.png"
+                alt="Project 1"
+                class="project-img"
+            /></a>
+            <h3 class="project-caption-1">Forkify Website</h3>
+            <figcaption class="project-caption-2 project-text">
               A brief description of the project, highlighting its features and
               technologies used.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <!-- project-2 -->
-          <div class="project">
-            <img
-              src="assets/images/project2.jpg"
-              alt="Project 2"
-              class="project-img"
-            />
-            <h3 class="heading-tertiary">Project Title 2</h3>
-            <p class="text-description">
+          <figure class="project">
+            <a
+              class="nav-li-link"
+              href="https://omifood-ali27-dev.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/images/project-2.png"
+                alt="Project 1"
+                class="project-img"
+            /></a>
+            <h3 class="project-caption-1">OmniFood Website</h3>
+            <figcaption class="project-caption-2">
               A brief description of the project, highlighting its features and
               technologies used.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <!-- project-3 -->
-          <div class="project">
-            <img
-              src="assets/images/project3.jpg"
-              alt="Project 3"
-              class="project-img"
-            />
-            <h3 class="heading-tertiary">Project Title 3</h3>
-            <p class="text-description">
+          <figure class="project">
+            <a
+              class="nav-li-link"
+              href="https://the-benkist-website.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/images/project-3.png"
+                alt="Project 1"
+                class="project-img"
+            /></a>
+            <h3 class="project-caption-1">The Benkist Website</h3>
+            <figcaption class="project-caption-2">
               A brief description of the project, highlighting its features and
               technologies used.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <!-- project-4 -->
-          <div class="project">
-            <img
-              src="assets/images/project4.jpg"
-              alt="Project 4"
-              class="project-img"
-            />
-            <h3 class="heading-tertiary">Project Title 4</h3>
-            <p class="text-description">
+          <figure class="project">
+            <a
+              class="nav-li-link"
+              href="https://abid-ali-trillo-project.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/images/project-4.png"
+                alt="Project 1"
+                class="project-img"
+            /></a>
+            <h3 class="project-caption-1">Trillo Website</h3>
+            <figcaption class="project-caption-2">
               A brief description of the project, highlighting its features and
               technologies used.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <!-- project-5 -->
-          <div class="project">
-            <img
-              src="assets/images/project5.jpg"
-              alt="Project 5"
-              class="project-img"
-            />
-            <h3 class="heading-tertiary">Project Title 5</h3>
-            <p class="text-description">
+          <figure class="project">
+            <a
+              class="nav-li-link"
+              href="https://ali27-dev-the-bankist-app.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/images/project-5.png"
+                alt="Project 1"
+                class="project-img"
+            /></a>
+            <h3 class="project-caption-1">The Benkist App</h3>
+            <figcaption class="project-caption-2">
               A brief description of the project, highlighting its features and
               technologies used.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
           <!-- project-6 -->
-          <div class="project">
-            <img
-              src="assets/images/project6.jpg"
-              alt="Project 6"
-              class="project-img"
-            />
-            <h3 class="heading-tertiary">Project Title 6</h3>
-            <p class="text-description">
+          <figure class="project">
+            <a
+              class="nav-li-link"
+              href="https://mapty-app-ali27-dev.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/images/project-6.png"
+                alt="Project 1"
+                class="project-img"
+            /></a>
+            <h3 class="project-caption-1">Mapty App</h3>
+            <figcaption class="project-caption-2">
               A brief description of the project, highlighting its features and
               technologies used.
-            </p>
-          </div>
+            </figcaption>
+          </figure>
         </div>
       </section>
       <!-- projects-section-end -->
