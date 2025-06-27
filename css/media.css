@@ -132,7 +132,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     width: 100%;
     height: 100vh;
     display: flex;
@@ -177,5 +177,129 @@
   .nav-li-link:hover,
   .nav-li-link:active {
     color: #00c8a1;
+  }
+  .project-img {
+    width: 40rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (smaller Tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-img {
+    width: 35rem;
+  }
+  .hero-img-box {
+    width: 50%;
+  }
+
+  .secondary-heading {
+    margin-bottom: 4.8rem;
+  }
+  .text-bio-description {
+    margin-bottom: 1rem;
+  }
+  strong {
+    display: flex;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+  .main-nav-icon > .text-bio-description > .bio-follow {
+    display: none;
+  }
+  .btn-about {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 0.8rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid-2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img-box {
+    width: 30rem;
+    height: 30rem;
+  }
+  .hero-img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .logo {
+    height: 4.8rem;
+  }
+  .about-me {
+    padding: 3rem;
+  }
+  .projects-section {
+    padding: 3.2rem;
+  }
+  .project-img {
+    width: 35rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .service-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .skills-section {
+    padding: 3.2rem;
+  }
+  .image-box img {
+    width: 40rem;
+    height: 40rem;
+  }
+  .section-cta {
+    padding: 3.2rem;
+  }
+  .contact-section {
+    padding: 3.2rem;
   }
 }
