@@ -125,7 +125,8 @@
     z-index: 9999;
   }
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.74);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(10px);
     position: absolute;
@@ -168,8 +169,13 @@
     flex-direction: column;
     gap: 4.8rem;
   }
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    font-size: 3rem;
+  .nav-li-link:link,
+  .nav-li-link:visited {
+    font-size: 2.4rem;
+    color: #555;
+  }
+  .nav-li-link:hover,
+  .nav-li-link:active {
+    color: #00c8a1;
   }
 }
