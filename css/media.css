@@ -74,13 +74,9 @@
     width: 45rem;
   }
   .project:hover .project-caption-1 {
-    /* color: #000; */
-    /* opacity: 1; */
     transform: translate(-2%, -700%);
   }
   .project:hover .project-caption-2 {
-    /* color: #000; */
-    /* opacity: 1; */
     transform: translate(-3%, -250%);
   }
 }
