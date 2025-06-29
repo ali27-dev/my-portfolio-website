@@ -1,19 +1,20 @@
-/***********************/
-// mobile-nav
+/*******************/
+// SELECTED-ELEMENT//
 const btnMobileNav = document.getElementById("btn-mobile-nav");
 const headerEl = document.getElementById("header");
-console.log(btnMobileNav);
-console.log(headerEl);
+const sectionheaderEl = document.querySelector(".hero-section");
+const links = document.querySelectorAll(".nav-li-link");
+const yearEl = document.querySelector(".year");
 
+/***********************/
+// mobile-nav
 btnMobileNav.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 // ************************* //
 // smooth-scrolling
-
-const allLinks = document.querySelectorAll("a:link");
-
-allLinks.forEach(function (link) {
+// we will Implement this functionality as soon as possible
+links.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const href = link.getAttribute("href");
@@ -30,17 +31,13 @@ allLinks.forEach(function (link) {
       console.log(sectionEl);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
-    //mobile nav
 
     if (link.classList.contains("nav-li-link"))
       headerEl.classList.toggle("nav-open");
   });
 });
-
 //*********************************/ /
 // sticky-nav
-const sectionheaderEl = document.querySelector(".hero-section");
-
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
@@ -61,10 +58,10 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionheaderEl);
+
 /*************************/
 // span current date
-const yearEl = document.querySelector(".year");
-
 const newYear = new Date().getFullYear();
 console.log(newYear);
+
 yearEl.textContent = newYear;

@@ -28,7 +28,9 @@
   list-style: none;
 }
 
+.project-nav-li-link,
 .nav-li-link:link,
+.project-nav-li-link,
 .nav-li-link:visited {
   display: inline-block;
   list-style: none;
@@ -39,7 +41,9 @@
   transition: all 0.3s;
 }
 
+.project-nav-li-link,
 .nav-li-link:hover,
+.project-nav-li-link,
 .nav-li-link:active {
   color: #00c8a1;
 }
